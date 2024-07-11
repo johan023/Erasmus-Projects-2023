@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+	margin: 15px 15px; 
+}
+
+
+.categories {
+    display: grid;
+    grid-template-columns: auto;
+}
+.categories--card img {
+    width: 200px;
+}
+.categories--card button {
+    margin: 20px 20px;
+}
+.categories--card {
+    border: 1px gray solid;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+/* Subscribe Button */
+.categories--card button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.categories--card button:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .categories {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .categories {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+
+/* Form Styles */
+.subform {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.subform form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subform label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.subform input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subform input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.subform input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
